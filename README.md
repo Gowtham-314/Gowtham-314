@@ -1,5 +1,5 @@
 # 💫 About Me:
-💻 Skilled in Python, HTML, basic C++, and basic SQL<br>🌱 Currently focusing on Web Development and strengthening my Python skills<br>🤖 Interested in AI, Machine Learning, and intelligent applications
+💻 Skilled in Python, Basic HTML, Basic C++, and Basic SQL<br>🌱 Currently focusing on Web Development and strengthening my Python skills<br>🤖 Interested in AI, Machine Learning, and intelligent applications
 
 
 ## 🌐 Socials:
