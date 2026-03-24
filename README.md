@@ -60,7 +60,7 @@ Focused on <b>AI, Web Development</b>, and solving real-world problems.
 
 ---
 
-## 🧠 AI Mode
+## 🧠 Dev Mode
 <p align="center">
   <img src="https://img.shields.io/badge/Focus-AI%20%7C%20ML%20%7C%20Automation-00F7FF?style=for-the-badge"/>
 </p>
