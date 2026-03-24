@@ -1,18 +1,65 @@
-# 💫 About Me:
-💻 Skilled in Python, Basic HTML, Basic C++, and Basic SQL<br>🌱 Currently focusing on Web Development and strengthening my Python skills<br>🤖 Interested in AI, Machine Learning, and intelligent applications
-
-
-## 🌐 Socials:
-[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/https://www.instagram.com/gowtham_gowda_c_b?igsh=OWlxcGtpNDU4NWJh) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/https://www.linkedin.com/in/gowtham-gowda-c-b-a29727353) [![](https://img.shields.io/badge/X-black.svg?logo=X&logoColor=white)](https://x.com/https://x.com/Gowtham2480) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:gowdagowtham7930@gmail.com) 
-
-# 💻 Tech Stack:
-![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white) ![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![Anaconda](https://img.shields.io/badge/Anaconda-%2344A833.svg?style=for-the-badge&logo=anaconda&logoColor=white)
-# 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=Gowtham-314&theme=dark&hide_border=false&include_all_commits=true&count_private=true)<br/>
-![](https://nirzak-streak-stats.vercel.app/?user=Gowtham-314&theme=dark&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=Gowtham-314&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
+<h1 align="center">Hi 👋, I'm Gowtham Gowda</h1>
+<h3 align="center">🚀 Aspiring Developer | Python Enthusiast | Future AI Engineer</h3>
 
 ---
-[![](https://visitcount.itsvg.in/api?id=Gowtham-314&icon=2&color=0)](https://visitcount.itsvg.in)
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+## 🧑‍💻 About Me
+- 💻 Skilled in **Python, C++, HTML, SQL**
+- 🌱 Currently diving deeper into **Web Development & Advanced Python**
+- 🤖 Passionate about **AI, Machine Learning & Smart Applications**
+- ⚡ Love building projects that solve real-world problems
+
+---
+
+## 🌐 Connect With Me
+<p align="center">
+  <a href="https://www.instagram.com/gowtham_gowda_c_b">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/>
+  </a>
+  <a href="https://www.linkedin.com/in/gowtham-gowda-c-b-a29727353">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
+  </a>
+  <a href="https://x.com/Gowtham2480">
+    <img src="https://img.shields.io/badge/X-black?style=for-the-badge&logo=twitter&logoColor=white"/>
+  </a>
+  <a href="mailto:gowdagowtham7930@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
+  </a>
+</p>
+
+---
+
+## 🛠️ Tech Stack
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,cpp,html,mysql,anaconda,vercel,netlify" />
+</p>
+
+---
+
+## 📊 GitHub Analytics
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Gowtham-314&show_icons=true&theme=tokyonight&hide_border=true" height="180"/>
+  <img src="https://streak-stats.demolab.com?user=Gowtham-314&theme=tokyonight&hide_border=true" height="180"/>
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Gowtham-314&layout=compact&theme=tokyonight&hide_border=true"/>
+</p>
+
+---
+
+## 🚀 Current Focus
+- 🔥 Building real-world **Web Projects**
+- 🧠 Learning **Data Structures & Problem Solving**
+- 🤖 Exploring **AI + ML integrations**
+
+---
+
+## ✨ Quote I Follow
+> *"Code. Learn. Build. Repeat."*
+
+---
+
+<p align="center">
+  <img src="https://visitcount.itsvg.in/api?id=Gowtham-314&icon=5&color=6"/>
+</p>
