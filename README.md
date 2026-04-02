@@ -1,36 +1,42 @@
-<!-- TOP BANNER -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=venom&color=0:0f2027,50:00c6ff,100:0072ff&height=260&section=header&text=Gowtham%20Gowda&fontSize=48&fontColor=ffffff&animation=twinkling&fontAlignY=40"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:050816,25:0b2d4d,50:0f5b78,75:00c2ff,100:0a1f44&height=260&section=header&text=Gowtham%20Gowda&fontSize=50&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Building%20with%20AI%20%7C%20Web%20%7C%20Automation&descAlignY=58&descSize=18"/>
 </p>
 
-<!-- TYPING ANIMATION -->
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=600&size=26&duration=2500&pause=800&color=00F7FF&center=true&vCenter=true&width=700&lines=🚀+Aspiring+AI+Engineer;💻+Python+Developer;🌐+Web+Tech+Explorer;🤖+Building+Smart+Systems"/>
+  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=700&size=26&duration=2300&pause=700&color=00F7FF&center=true&vCenter=true&width=800&lines=Aspiring+AI+Engineer;Python+Developer;Web+Tech+Explorer"/>
 </p>
 
-<!-- WAVE DIVIDER -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&height=2"/>
+  <img src="https://komarev.com/ghpvc/?username=Gowtham-314&style=for-the-badge&color=00c2ff" alt="profile views" />
+  <img src="https://img.shields.io/badge/Focus-AI%20%7C%20ML%20%7C%20Automation-00F7FF?style=for-the-badge" alt="focus badge" />
+  <img src="https://img.shields.io/badge/Status-Open%20to%20Build-0b2d4d?style=for-the-badge" alt="status badge" />
 </p>
 
----
-
-## 🧑‍💻 About Me
 <p align="center">
-Passionate developer blending <b>code + creativity</b> to build intelligent systems.<br>
-Focused on <b>AI, Web Development</b>, and solving real-world problems.
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&height=3"/>
 </p>
 
----
-
-## ⚡ Tech Arsenal
+## About Me
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=python,cpp,html,mysql,anaconda,vercel,netlify&theme=dark" />
+  I like turning ideas into polished, useful software with a strong focus on AI, web experiences, and automation.<br>
+  My style is practical: build, test, improve, then make it feel premium.
 </p>
 
----
+## What I’m Sharpening
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Gowtham-314&theme=tokyo-night&hide_border=true&area=true&custom_title=Contribution%20Flow" alt="activity graph" />
+</p>
 
-## 🌐 Connect
+## Tech Arsenal
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,cpp,c,html,css,mysql,git,github,vercel,netlify,&theme=dark" />
+</p>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:00f7ff,100:0072ff&height=1"/>
+</p>
+
+## Connect
 <p align="center">
   <a href="https://www.instagram.com/gowtham_gowda_c_b">
     <img src="https://img.shields.io/badge/Instagram-ff0066?style=for-the-badge&logo=instagram&logoColor=white"/>
@@ -46,11 +52,9 @@ Focused on <b>AI, Web Development</b>, and solving real-world problems.
   </a>
 </p>
 
----
-
-## 📊 Analytics
+## Analytics
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Gowtham-314&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117" height="180"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=Gowtham-314&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&rank_icon=github" height="180"/>
   <img src="https://streak-stats.demolab.com?user=Gowtham-314&theme=tokyonight&hide_border=true&background=0D1117" height="180"/>
 </p>
 
@@ -58,11 +62,13 @@ Focused on <b>AI, Web Development</b>, and solving real-world problems.
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Gowtham-314&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117"/>
 </p>
 
----
-
-## 🧠 Dev Mode
 <p align="center">
-  <img src="https://img.shields.io/badge/Focus-AI%20%7C%20ML%20%7C%20Automation-00F7FF?style=for-the-badge"/>
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&height=3"/>
+</p>
+
+## AI Mode
+<p align="center">
+  <img src="https://img.shields.io/badge/Build%20Mode-Ship%20Fast%20%7C%20Refine%20Hard-00F7FF?style=for-the-badge"/>
 </p>
 
 ```python
@@ -73,4 +79,12 @@ class Developer:
         self.stack = ["Python", "Web Dev", "C++"]
 
     def mindset(self):
-        return "Build → Break → Learn → Repeat 🚀"
+        return "Build -> Break -> Learn -> Repeat"
+
+    def upgrade(self):
+        return "Make it cleaner, faster, and more polished"
+```
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a1f44,25:005f73,50:00a6c7,75:00c2ff,100:050816&height=140&section=footer"/>
+</p>
