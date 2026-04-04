@@ -1,18 +1,826 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My_Profile</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gowtham Gowda | Premium Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --obsidian: #090b10;
+      --obsidian-soft: #10141d;
+      --obsidian-elev: #141a24;
+      --gold: #d9b24c;
+      --gold-soft: #f2ddb0;
+      --cyan: #39d8ff;
+      --text: #f7f8fa;
+      --muted: #a2afc0;
+      --line: rgba(255, 255, 255, 0.12);
+      --glow-gold: 0 0 34px rgba(217, 178, 76, 0.35);
+      --glow-cyan: 0 0 34px rgba(57, 216, 255, 0.28);
+      --radius: 18px;
+      --max: 1180px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Space Grotesk", system-ui, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 12% 8%, rgba(217, 178, 76, 0.18), transparent 42%),
+        radial-gradient(circle at 84% 0%, rgba(57, 216, 255, 0.12), transparent 36%),
+        linear-gradient(150deg, #05070b 0%, #090b10 45%, #0b1018 100%);
+      min-height: 100vh;
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      pointer-events: none;
+      background-image:
+        linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+      background-size: 80px 80px;
+      mask-image: radial-gradient(circle at center, black 45%, transparent 90%);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .shell {
+      width: min(var(--max), calc(100% - 2.4rem));
+      margin-inline: auto;
+    }
+
+    .section {
+      padding: 5.2rem 0;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.75s ease, transform 0.75s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .topbar-wrap {
+      position: sticky;
+      top: 1rem;
+      z-index: 40;
+      padding-top: 1rem;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      background: rgba(10, 13, 19, 0.68);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      backdrop-filter: blur(12px);
+      border-radius: 999px;
+      padding: 0.65rem 1.1rem;
+      transition: border-color 0.25s ease, background 0.25s ease;
+    }
+
+    .topbar.scrolled {
+      border-color: rgba(57, 216, 255, 0.35);
+      background: rgba(10, 13, 19, 0.88);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      font-size: 0.9rem;
+      letter-spacing: 0.2px;
+      color: var(--gold-soft);
+      white-space: nowrap;
+    }
+
+    .brand-badge {
+      width: 34px;
+      height: 34px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      font-weight: 700;
+      background: linear-gradient(135deg, #8b6a1e, #dfb645);
+      color: #0b0f15;
+      box-shadow: var(--glow-gold);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .nav-link {
+      color: var(--muted);
+      font-size: 0.84rem;
+      font-weight: 600;
+      padding: 0.45rem 0.78rem;
+      border-radius: 999px;
+      transition: color 0.2s ease, background 0.2s ease;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+      color: var(--text);
+      background: rgba(57, 216, 255, 0.16);
+    }
+
+    .hero {
+      padding: 5rem 0 4rem;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 1.5rem;
+      align-items: stretch;
+    }
+
+    .lux-card {
+      position: relative;
+      border-radius: var(--radius);
+      border: 1px solid var(--line);
+      background: linear-gradient(160deg, rgba(20, 26, 36, 0.88), rgba(11, 14, 21, 0.9));
+      overflow: hidden;
+      isolation: isolate;
+    }
+
+    .lux-card::before {
+      content: "";
+      position: absolute;
+      inset: -2px;
+      pointer-events: none;
+      background: radial-gradient(
+        220px circle at var(--spot-x, 50%) var(--spot-y, 50%),
+        rgba(57, 216, 255, 0.2),
+        transparent 68%
+      );
+      opacity: 0;
+      transition: opacity 0.25s ease;
+      z-index: -1;
+    }
+
+    .lux-card:hover::before {
+      opacity: 1;
+    }
+
+    .hero-main {
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1.1rem;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.75rem;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--gold-soft);
+      width: fit-content;
+      padding: 0.33rem 0.75rem;
+      border-radius: 999px;
+      border: 1px solid rgba(217, 178, 76, 0.35);
+      background: rgba(217, 178, 76, 0.08);
+    }
+
+    .dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--cyan);
+      box-shadow: var(--glow-cyan);
+    }
+
+    h1 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(2.4rem, 5vw, 4.6rem);
+      line-height: 0.95;
+      letter-spacing: 0.5px;
+      font-weight: 700;
+      text-wrap: balance;
+    }
+
+    h1 span {
+      background: linear-gradient(120deg, #e8d29d 0%, #d9b24c 42%, #39d8ff 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .lead {
+      font-size: 1rem;
+      color: var(--muted);
+      max-width: 60ch;
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+    }
+
+    .chip {
+      font-size: 0.8rem;
+      padding: 0.36rem 0.72rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      background: rgba(255, 255, 255, 0.03);
+      color: var(--text);
+    }
+
+    .actions {
+      display: flex;
+      gap: 0.7rem;
+      flex-wrap: wrap;
+      margin-top: 0.3rem;
+    }
+
+    .btn {
+      border: 1px solid transparent;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 0.88rem;
+      padding: 0.75rem 1.05rem;
+      transition: transform 0.2s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.45rem;
+    }
+
+    .btn.gold {
+      color: #121418;
+      background: linear-gradient(140deg, #f4dca8 0%, #d9b24c 55%, #b1862c 100%);
+      box-shadow: var(--glow-gold);
+    }
+
+    .btn.gold:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn.ghost {
+      border-color: rgba(57, 216, 255, 0.45);
+      background: rgba(57, 216, 255, 0.08);
+      color: #cff4ff;
+    }
+
+    .btn.ghost:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--glow-cyan);
+    }
+
+    .hero-side {
+      padding: 2rem;
+      display: grid;
+      gap: 1rem;
+    }
+
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.95rem;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.09);
+    }
+
+    .avatar {
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      border: 2px solid rgba(217, 178, 76, 0.5);
+      object-fit: cover;
+      box-shadow: var(--glow-gold);
+    }
+
+    .profile h3 {
+      font-size: 1rem;
+      margin-bottom: 0.15rem;
+    }
+
+    .profile p {
+      font-size: 0.84rem;
+      color: var(--muted);
+    }
+
+    .metric-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.8rem;
+    }
+
+    .metric {
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: rgba(255, 255, 255, 0.02);
+      padding: 0.85rem;
+    }
+
+    .metric strong {
+      display: block;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--gold-soft);
+      font-family: "Cormorant Garamond", serif;
+      line-height: 1;
+      margin-bottom: 0.25rem;
+    }
+
+    .metric span {
+      color: var(--muted);
+      font-size: 0.79rem;
+    }
+
+    .section-head {
+      margin-bottom: 1.45rem;
+    }
+
+    .section-kicker {
+      font-size: 0.73rem;
+      text-transform: uppercase;
+      letter-spacing: 1.8px;
+      color: var(--cyan);
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+    }
+
+    .section-title {
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(1.85rem, 4vw, 2.8rem);
+      line-height: 1.04;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .about-card {
+      padding: 1.4rem;
+    }
+
+    .about-card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-top: 0.5rem;
+    }
+
+    .focus-list {
+      display: grid;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+    }
+
+    .focus-item {
+      font-size: 0.9rem;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+    }
+
+    .focus-item::before {
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: var(--gold);
+      box-shadow: 0 0 10px rgba(217, 178, 76, 0.45);
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+
+    .project {
+      padding: 1.2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      min-height: 225px;
+      transition: transform 0.22s ease, border-color 0.22s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-4px);
+      border-color: rgba(57, 216, 255, 0.42);
+    }
+
+    .project h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    .project p {
+      color: var(--muted);
+      font-size: 0.88rem;
+      flex: 1;
+    }
+
+    .project .meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.6rem;
+      color: var(--gold-soft);
+      font-size: 0.82rem;
+      font-weight: 600;
+    }
+
+    .tag {
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      color: #d1e5f1;
+      padding: 0.24rem 0.6rem;
+      font-size: 0.74rem;
+      background: rgba(255, 255, 255, 0.03);
+      width: fit-content;
+    }
+
+    .cta-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 1rem;
+    }
+
+    .connect {
+      padding: 1.4rem;
+      display: grid;
+      gap: 0.8rem;
+    }
+
+    .line-link {
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 12px;
+      padding: 0.72rem 0.8rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.02);
+      transition: border-color 0.2s ease, transform 0.2s ease;
+      font-size: 0.88rem;
+    }
+
+    .line-link:hover {
+      border-color: rgba(217, 178, 76, 0.45);
+      transform: translateX(4px);
+    }
+
+    .line-link span:last-child {
+      color: var(--muted);
+      font-size: 0.8rem;
+    }
+
+    .code-panel {
+      padding: 1.4rem;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+      font-size: 0.84rem;
+      line-height: 1.65;
+      color: #dbe6f6;
+      background: linear-gradient(180deg, rgba(12, 17, 24, 0.95), rgba(10, 14, 20, 0.95));
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: var(--radius);
+      overflow: auto;
+      white-space: pre;
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03);
+    }
+
+    footer {
+      padding: 2.4rem 0 3.2rem;
+      color: var(--muted);
+      text-align: center;
+      font-size: 0.83rem;
+    }
+
+    @media (max-width: 1020px) {
+      .hero-grid,
+      .projects-grid,
+      .cta-grid,
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding-top: 3rem;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .topbar {
+        border-radius: 16px;
+        align-items: flex-start;
+      }
+
+      .brand {
+        font-size: 0.82rem;
+      }
+
+      .nav-links {
+        justify-content: flex-start;
+      }
+
+      .hero-main,
+      .hero-side,
+      .about-card,
+      .connect,
+      .code-panel,
+      .project {
+        padding: 1.1rem;
+      }
+
+      .metric-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .section {
+        padding: 4rem 0;
+      }
+    }
+  </style>
 </head>
 <body>
-    <h1><center>Welcome to My Profile</center></h1>
-    <p>This is a simple HTML page representing my profile.</p>
-    <h1><b>About Me</b></h1>
-    <p>Hello! My name is Gowtham Gowda C B. I am passionate about web development and design. In my free time, I enjoy hiking, reading, and exploring new technologies.</p>
-    <h1><u>Contact Information</u></h1>
-    <p>Email:gowdagowtham7930@gmail.com</p>
-    <p>Phone: +91 8660251956</p>
+  <div class="topbar-wrap shell">
+    <header class="topbar" id="topbar">
+      <a href="#home" class="brand">
+        <span class="brand-badge">GG</span>
+        <span>Gowtham-314 | AI Engineer in Progress</span>
+      </a>
+      <nav class="nav-links">
+        <a class="nav-link" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#connect">Connect</a>
+      </nav>
+    </header>
+  </div>
+
+  <main class="shell" id="home">
+    <section class="hero reveal">
+      <div class="hero-grid">
+        <article class="lux-card hero-main" data-spotlight>
+          <p class="eyebrow"><span class="dot"></span> Github Profile Analysis</p>
+          <h1><span>Building polished AI and web experiences.</span></h1>
+          <p class="lead">Based on your GitHub profile, this site reflects your practical style: ship quickly, refine deeply, and keep learning in public. You currently show strong momentum in Python, frontend projects, and C fundamentals.</p>
+          <div class="hero-meta">
+            <span class="chip">Bengaluru, Karnataka, IN</span>
+            <span class="chip">Always learning and improving</span>
+            <span class="chip">178 contributions last year</span>
+          </div>
+          <div class="actions">
+            <a class="btn gold" href="https://github.com/Gowtham-314" target="_blank" rel="noreferrer">Open GitHub Profile</a>
+            <a class="btn ghost" href="#projects">View Featured Repos</a>
+          </div>
+        </article>
+
+        <aside class="lux-card hero-side" data-spotlight>
+          <div class="profile">
+            <img class="avatar" src="https://avatars.githubusercontent.com/u/206342165?v=4" alt="Gowtham Gowda avatar">
+            <div>
+              <h3>Gowtham Gowda C B</h3>
+              <p>@Gowtham-314</p>
+            </div>
+          </div>
+
+          <div class="metric-grid">
+            <div class="metric">
+              <strong data-count="9">0</strong>
+              <span>Public Repositories</span>
+            </div>
+            <div class="metric">
+              <strong data-count="6">0</strong>
+              <span>Followers</span>
+            </div>
+            <div class="metric">
+              <strong data-count="7">0</strong>
+              <span>Following</span>
+            </div>
+            <div class="metric">
+              <strong data-count="178">0</strong>
+              <span>Contributions (1 year)</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-head reveal">
+        <p class="section-kicker">About</p>
+        <h2 class="section-title">Practical Builder With A Premium Finish</h2>
+      </div>
+      <div class="about-grid">
+        <article class="lux-card about-card reveal" data-spotlight>
+          <h3>Profile Direction</h3>
+          <p>Your GitHub README emphasizes AI, automation, and polished UX. The core message is clear: you like turning ideas into useful products and then pushing quality further.</p>
+          <div class="focus-list">
+            <p class="focus-item">Build, test, improve, repeat</p>
+            <p class="focus-item">Strong visual presentation and branding</p>
+            <p class="focus-item">Hands-on daily learning workflow</p>
+          </div>
+        </article>
+
+        <article class="lux-card about-card reveal" data-spotlight>
+          <h3>Current Sharpening</h3>
+          <p>Your public activity and repositories suggest consistent progress across language fundamentals and real project execution.</p>
+          <div class="focus-list">
+            <p class="focus-item">Python applications and automation</p>
+            <p class="focus-item">Web development fundamentals</p>
+            <p class="focus-item">C/C++ systems-level thinking</p>
+            <p class="focus-item">AI and ML exploration</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section-head reveal">
+        <p class="section-kicker">Featured Repositories</p>
+        <h2 class="section-title">Projects Extracted From Your GitHub</h2>
+      </div>
+      <div class="projects-grid">
+        <article class="lux-card project reveal" data-spotlight>
+          <h3>secure-quiz</h3>
+          <p>Frontend-driven quiz project showing interactive logic and browser-based user flow implementation.</p>
+          <span class="tag">JavaScript</span>
+          <div class="meta"><span>Stars: 3</span><a href="https://github.com/Gowtham-314/secure-quiz" target="_blank" rel="noreferrer">Open Repo</a></div>
+        </article>
+
+        <article class="lux-card project reveal" data-spotlight>
+          <h3>e-cart-system-python</h3>
+          <p>Python console shopping cart application that demonstrates object-level thinking and structured workflow design.</p>
+          <span class="tag">Python</span>
+          <div class="meta"><span>Stars: 4</span><a href="https://github.com/Gowtham-314/e-cart-system-python" target="_blank" rel="noreferrer">Open Repo</a></div>
+        </article>
+
+        <article class="lux-card project reveal" data-spotlight>
+          <h3>daily_web_development</h3>
+          <p>Incremental learning repo for web technologies with practical iteration and continuous skill growth.</p>
+          <span class="tag">HTML/CSS/JS</span>
+          <div class="meta"><span>Stars: 3</span><a href="https://github.com/Gowtham-314/daily_web_development" target="_blank" rel="noreferrer">Open Repo</a></div>
+        </article>
+
+        <article class="lux-card project reveal" data-spotlight>
+          <h3>daily_python_concept</h3>
+          <p>Daily Python concept repository built around understanding-by-doing and compact executable examples.</p>
+          <span class="tag">Jupyter Notebook</span>
+          <div class="meta"><span>Stars: 3</span><a href="https://github.com/Gowtham-314/daily_python_concept" target="_blank" rel="noreferrer">Open Repo</a></div>
+        </article>
+
+        <article class="lux-card project reveal" data-spotlight>
+          <h3>c-from-scratch</h3>
+          <p>C fundamentals repository focused on low-level programming, clean basics, and frequent practice commits.</p>
+          <span class="tag">C Language</span>
+          <div class="meta"><span>Stars: 1</span><a href="https://github.com/Gowtham-314/c-from-scratch" target="_blank" rel="noreferrer">Open Repo</a></div>
+        </article>
+
+        <article class="lux-card project reveal" data-spotlight>
+          <h3>math-game-python</h3>
+          <p>Python arithmetic game with random generation and score progression to reinforce logic and UX flow.</p>
+          <span class="tag">Python</span>
+          <div class="meta"><span>Stars: 0</span><a href="https://github.com/Gowtham-314/math-game-python" target="_blank" rel="noreferrer">Open Repo</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="connect">
+      <div class="section-head reveal">
+        <p class="section-kicker">Connect</p>
+        <h2 class="section-title">Collaborate, Build, And Ship Better</h2>
+      </div>
+
+      <div class="cta-grid">
+        <div class="lux-card connect reveal" data-spotlight>
+          <a class="line-link" href="https://github.com/Gowtham-314" target="_blank" rel="noreferrer"><span>GitHub</span><span>@Gowtham-314</span></a>
+          <a class="line-link" href="https://www.linkedin.com/in/gowtham-gowda-c-b-a29727353/" target="_blank" rel="noreferrer"><span>LinkedIn</span><span>Professional Profile</span></a>
+          <a class="line-link" href="https://www.instagram.com/gowtham_gowda_c_b" target="_blank" rel="noreferrer"><span>Instagram</span><span>@gowtham_gowda_c_b</span></a>
+          <a class="line-link" href="mailto:gowdagowtham7930@gmail.com"><span>Email</span><span>Direct Contact</span></a>
+        </div>
+
+        <div class="code-panel reveal">class DeveloperProfile:
+  name = "Gowtham Gowda"
+  role = "AI Engineer in Progress"
+  strengths = ["Python", "Web", "Automation", "C/C++"]
+
+  def mindset(self):
+      return "Build -> Break -> Learn -> Repeat"
+
+  def objective(self):
+      return "Create practical software with premium polish"</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="shell">
+    <p>Designed from live GitHub profile signals | <span id="year"></span> Gowtham Gowda</p>
+  </footer>
+
+  <script>
+    const topbar = document.getElementById("topbar");
+    const navLinks = [...document.querySelectorAll(".nav-link")];
+    const revealItems = document.querySelectorAll(".reveal");
+    const counters = document.querySelectorAll("[data-count]");
+
+    window.addEventListener("scroll", () => {
+      topbar.classList.toggle("scrolled", window.scrollY > 10);
+    });
+
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.16 });
+
+    revealItems.forEach((item) => revealObserver.observe(item));
+
+    const sections = ["home", "about", "projects", "connect"].map((id) => document.getElementById(id));
+    const sectionObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        const href = `#${entry.target.id}`;
+        navLinks.forEach((a) => a.classList.toggle("active", a.getAttribute("href") === href));
+      });
+    }, { threshold: 0.45 });
+
+    sections.forEach((section) => section && sectionObserver.observe(section));
+
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        const el = entry.target;
+        const target = Number(el.dataset.count || 0);
+        const duration = 1100;
+        const start = performance.now();
+
+        const tick = (now) => {
+          const progress = Math.min((now - start) / duration, 1);
+          const value = Math.floor(progress * target);
+          el.textContent = value.toLocaleString();
+          if (progress < 1) {
+            requestAnimationFrame(tick);
+          } else {
+            el.textContent = target.toLocaleString();
+          }
+        };
+
+        requestAnimationFrame(tick);
+        counterObserver.unobserve(el);
+      });
+    }, { threshold: 0.55 });
+
+    counters.forEach((counter) => counterObserver.observe(counter));
+
+    document.querySelectorAll("[data-spotlight]").forEach((card) => {
+      card.addEventListener("pointermove", (event) => {
+        const rect = card.getBoundingClientRect();
+        const x = ((event.clientX - rect.left) / rect.width) * 100;
+        const y = ((event.clientY - rect.top) / rect.height) * 100;
+        card.style.setProperty("--spot-x", `${x}%`);
+        card.style.setProperty("--spot-y", `${y}%`);
+      });
+    });
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
-
