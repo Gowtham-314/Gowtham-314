@@ -10,6 +10,11 @@
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&duration=2000&pause=1000&color=00F7FF&center=true&vCenter=true&width=900&lines=AI%20Engineer%20in%20Progress;Python%20Developer%20%7C%20C%2B%2B%20Enthusiast;Web%20Tech%20Explorer%20%7C%20Automation%20Wizard"/>
 </p>
 
+<h1><p align="center">
+  <a href="https://gowtham-314.github.io/Gowtham-314/" target="_blank">
+    <img src="https://img.shields.io/badge/Portfolio-Visit%20Website-00c2ff?style=for-the-badge&logo=vercel&logoColor=white"/>
+  </a></h1>
+  
 <p align="center">
   <a href="https://github.com/Gowtham-314">
     <img src="https://komarev.com/ghpvc/?username=Gowtham-314&style=for-the-badge&color=00c2ff" alt="profile views" />
