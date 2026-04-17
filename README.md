@@ -2,6 +2,8 @@
   <img src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake.svg" />
 </div>
 
+
+
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:050816,20:0b2d4d,40:0f5b78,60:00c2ff,80:0a1f44,100:050816&height=300&section=header&text=Gowtham%20Gowda&fontSize=55&fontColor=ffffff&animation=twinkling&fontAlignY=35&desc=Building%20with%20AI%20%7C%20Web%20%7C%20Automation&descAlignY=60&descSize=20"/>
 </p>
@@ -152,3 +154,6 @@ class Developer:
 </p>
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
+
+
+
