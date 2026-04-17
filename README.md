@@ -40,10 +40,6 @@
   <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=14&duration=3000&pause=500&center=true&width=600&lines=%22I+like+turning+ideas+into+polished%2C+useful+software+with+a+strong+focus+on+AI%2C+web+experiences%2C+and+automation.%22" />
 </p>
 
-<p align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=light&theme=algolia" height="130" alt="Random Quote" />
-</p>
-
 </div>
 
 ## What I'm Sharpening
