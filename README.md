@@ -74,6 +74,10 @@
   <a href="https://gowtham-314.github.io/Gowtham-314/" target="_blank">
     <img src="https://img.shields.io/badge/Portfolio-Visit%20Website-00c2ff?style=for-the-badge&logo=vercel&logoColor=white"/>
   </a>
+  <a href="https://build-protofolio.vercel.app/" target="_blank">
+    <img src="https://img.shields.io/badge/Portfolio-Visit%20Website-00c2ff?style=for-the-badge&logo=vercel&logoColor=white"/>
+  </a>
+  
   <a href="https://www.instagram.com/gowtham_gowda_c_b" target="_blank">
     <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white&style=for-the-badge"/>
   </a>
