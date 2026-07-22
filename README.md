@@ -106,12 +106,6 @@
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=Gowtham-314&theme=tokyonight&hide_border=true&background=0D1117&stroke=00F7FF&ring=00c2ff&fire=00FF88&currStreakNum=00F7FF&sideNums=00FF88" height="190"/>
 </p>
 
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Gowtham-314&theme=github_dark" width="100%"/>
-
-  <br/>
-</p>
-
 
 ## AI Mode
 
