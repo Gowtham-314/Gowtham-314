@@ -42,15 +42,6 @@
 
 </div>
 
-## What I'm Sharpening
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Gowtham-314&theme=tokyo-night&hide_border=true&area=true&areaColor=00c2ff&line=00F7FF&custom_title=Contribution%20Flow" alt="activity graph" />
-</p>
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:00f7ff,50:0072ff,100:00f7ff&height=1.5&section=header&animation=gradation"/>
-</p>
 
 ## Tech Arsenal
 
