@@ -22,8 +22,6 @@
     <img src="https://komarev.com/ghpvc/?username=Gowtham-314&style=for-the-badge&color=00c2ff" alt="profile views" />
   </a>
   <img src="https://img.shields.io/badge/Focus-AI%20%7C%20ML%20%7C%20Automation-00F7FF?style=for-the-badge&logoColor=ffffff" />
-  <img src="https://img.shields.io/badge/Status-Open%20to%20Work-00FF88?style=for-the-badge&logoColor=ffffff" />
-  <img src="https://img.shields.io/badge/Powered%20By-Caffeine%20%26%20Code-FF6B35?style=for-the-badge&logoColor=ffffff" />
 </p>
 
 <p align="center">
@@ -54,10 +52,6 @@
   <a href="https://gowtham-314.github.io/Gowtham-314/" target="_blank">
     <img src="https://img.shields.io/badge/Portfolio-Visit%20Website-00c2ff?style=for-the-badge&logo=vercel&logoColor=white"/>
   </a>
-  <a href="https://build-protofolio.vercel.app/" target="_blank">
-    <img src="https://img.shields.io/badge/Portfolio-Visit%20Website-00c2ff?style=for-the-badge&logo=vercel&logoColor=white"/>
-  </a>
-  
   <a href="https://www.instagram.com/gowtham_gowda_c_b" target="_blank">
     <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white&style=for-the-badge"/>
   </a>
